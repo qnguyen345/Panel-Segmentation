@@ -1,5 +1,5 @@
 detecto==1.2.2
-geopandas==0.14.3
+geopandas==0.13.2
 matplotlib==3.7.1
 numpy==1.24.2
 pandas==2.0.3
