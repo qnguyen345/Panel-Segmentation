@@ -7,7 +7,7 @@ import numpy as np
 from panel_segmentation import panel_detection as pan_det
 from tensorflow.keras.preprocessing import image as imagex
 import PIL
-from utils import generateSatelliteImage
+from panel_segmentation import utils
 
 img_file = "./panel_segmentation/examples/Panel_Detection_Examples/sat_img.png"
 
@@ -56,8 +56,8 @@ def testGenerateSatelliteImage():
         classifier_file_path=classifier_file_path,
         mounting_classifier_file_path=mounting_classifier_model_path)
     with pytest.raises(ValueError):
-        generateSatelliteImage(latitude, longitude,
-                            file_name_save, google_maps_api_key)
+        utils.generateSatelliteImage(latitude, longitude,
+                                     file_name_save, google_maps_api_key)
 
 
 def testHasPanels(panelDetectionClass, satelliteImg):
