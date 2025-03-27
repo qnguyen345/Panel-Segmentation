@@ -23,6 +23,7 @@ import torch
 from tensorflow.keras.preprocessing import image as imagex
 from torchvision import transforms
 from torchvision.ops import nms
+from utils import generateSatelliteImage
 
 panel_seg_model_path = path.join(path.dirname(__file__),
                                  'models',
@@ -752,10 +753,10 @@ class PanelDetection:
         # Generate the associated satellite image, if generate_image
         # is set to True
         if generate_image is True:
-            self.generateSatelliteImage(latitude,
-                                        longitude,
-                                        file_name_save_img,
-                                        google_maps_api_key)
+            generateSatelliteImage(latitude,
+                                   longitude,
+                                   file_name_save_img,
+                                   google_maps_api_key)
         else:
             print("Image not generated. Using image " +
                   str(file_name_save_img) + "...")
