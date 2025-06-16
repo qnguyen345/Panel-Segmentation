@@ -1,0 +1,11 @@
+MODEL_1: 
+rtmdet-x, object detection. 0.899 mAP_50
+rtmdet-s, object detection, 0.888 mAP_50
+rtmdet-l, object detection, 0.897 mAP_50
+rtmdet-ins-l, instance segmentation, 0.884 mAP_50
+faster_rcnn_tnr, object detection, 0.843 mAP_50
+faster_rcnn_pytorch_1x, object detection, 0.843 mAP_50
+cascade_rpn, object detection, 0.858 mAP_50
+mask_rcnn, instance segmentation, 0.83 mAP_50
+tood_x101, object detection, 0.831 mAP_50
+
