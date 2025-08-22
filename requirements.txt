@@ -20,7 +20,7 @@ scikit-image
 sphinx_rtd_theme==3.0.2
 tensorflow==2.13.0
 tensorflow_intel
-xarray=2023.1.0
+xarray==2023.1.0
 torch
 torchvision
 pytest-mock
