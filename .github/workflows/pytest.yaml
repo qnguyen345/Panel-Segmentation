@@ -35,7 +35,7 @@ jobs:
     - name: Install panel_segmentation
       run: |
         pip install .
-    - name: Install system dependencies
+    - name: Install native system dependencies
       run: |
         sudo apt-get update
         sudo apt-get install -y libgl1 
